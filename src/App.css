@@ -46,7 +46,7 @@ header {
 .blog-posts{
   display: flex;
   white-space: nowrap;
-  overflow:hidden;
+  overflow:scroll;
 }
 
 ::-webkit-scrollbar{
