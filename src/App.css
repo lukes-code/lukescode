@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap');
 
+/*
+
+#F7F7FF - White
+#B23A48 - Deep Chestnut
+#2D2A32 - Charleston Green
+#F2D0A4 - Tuscan
+#4E598C - Purple Navy
+
+*/
+
 body{
   font-family: 'Poppins', sans-serif;
   color: #333;
-  overflow-x: hidden;
 }
 
 /* Nav */
@@ -38,6 +47,10 @@ header {
   display: flex;
   white-space: nowrap;
   overflow:hidden;
+}
+
+::-webkit-scrollbar{
+  display: none;
 }
 
 .blog-post {
