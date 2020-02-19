@@ -157,6 +157,10 @@ span#bold {
   display: none;
 }
 
+p.sub-blog {
+  padding: 0rem 2rem 1rem 2rem;
+}
+
 .blog-post {
   flex: 1 1;
   height: 185px;
@@ -219,4 +223,20 @@ p.sub-content {
 
 .content {
   margin-top: 10px;
+}
+
+strong {
+  position: relative;
+}
+strong::after {
+  content: '';
+  position: absolute;
+  bottom: -0.125rem;
+  left: -0.5rem;
+  right: -0.5rem;
+  height: 0.75rem;
+  z-index: -1;
+  background-image: url("./underline.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

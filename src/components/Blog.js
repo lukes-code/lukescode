@@ -1,5 +1,6 @@
 import React from 'react';
 import * as contentful from 'contentful';
+import Arrow from '../arrow.svg';
 
 class Blog extends React.Component {
     state = {
@@ -67,7 +68,7 @@ class Blog extends React.Component {
         return (
             <div>
                 <div className="title">
-                    <h2 className="content">Blog Posts</h2>
+                    <h2 className="content"><strong>Blog Posts</strong></h2>
                     <p className="sub-content">Random entries that come to my head</p>
                 </div>
                 <div className="blog-posts">
@@ -254,7 +255,7 @@ class Blog extends React.Component {
                         </div>
                     </div>
                 </div>
-                <p>Swipe to see more -></p>
+                <p className="sub-blog">Swipe to see more</p>
             </div>
         );
       }
