@@ -66,7 +66,10 @@ class Blog extends React.Component {
 
         return (
             <div>
-                <p>Blog Posts</p>
+                <div className="title">
+                    <h2 className="content">Blog Posts</h2>
+                    <p className="sub-content">Random entries that come to my head</p>
+                </div>
                 <div className="blog-posts">
                     <div 
                         className="blog-post" 
@@ -75,8 +78,12 @@ class Blog extends React.Component {
                         onMouseUp={this.handleMouseUp}  
                         onMouseMove={this.handleMouseMove}
                     >
-                        <p>Lorem ipsum</p>
-                        <p>Lorem ipsum<br/>lorem ipsummm</p>
+                        <h4 id="card-title">Blog Title</h4>
+                        <p id="card-content">Example start to the blog post...</p>
+                        <div className="card-bottom">
+                            <p id="card-date">WED, FEB 19 20:14 PM</p>
+                            <button id="card-btn">Read</button>
+                        </div>
                     </div>
                     <div 
                         className="blog-post" 
@@ -85,8 +92,12 @@ class Blog extends React.Component {
                         onMouseUp={this.handleMouseUp}  
                         onMouseMove={this.handleMouseMove}
                     >
-                        <p>Lorem ipsum</p>
-                        <p>Lorem ipsum<br/>lorem ipsummm</p>
+                        <h4 id="card-title">Blog Title</h4>
+                        <p id="card-content">Example start to the blog post...</p>
+                        <div className="card-bottom">
+                            <p id="card-date">WED, FEB 19 20:14 PM</p>
+                            <button id="card-btn">Read</button>
+                        </div>
                     </div>
                     <div 
                         className="blog-post" 
@@ -95,8 +106,12 @@ class Blog extends React.Component {
                         onMouseUp={this.handleMouseUp}  
                         onMouseMove={this.handleMouseMove}
                     >
-                        <p>Lorem ipsum</p>
-                        <p>Lorem ipsum<br/>lorem ipsummm</p>
+                        <h4 id="card-title">Blog Title</h4>
+                        <p id="card-content">Example start to the blog post...</p>
+                        <div className="card-bottom">
+                            <p id="card-date">WED, FEB 19 20:14 PM</p>
+                            <button id="card-btn">Read</button>
+                        </div>
                     </div>
                     <div 
                         className="blog-post" 
@@ -105,8 +120,12 @@ class Blog extends React.Component {
                         onMouseUp={this.handleMouseUp}  
                         onMouseMove={this.handleMouseMove}
                     >
-                        <p>Lorem ipsum</p>
-                        <p>Lorem ipsum<br/>lorem ipsummm</p>
+                        <h4 id="card-title">Blog Title</h4>
+                        <p id="card-content">Example start to the blog post...</p>
+                        <div className="card-bottom">
+                            <p id="card-date">WED, FEB 19 20:14 PM</p>
+                            <button id="card-btn">Read</button>
+                        </div>
                     </div>
                     <div 
                         className="blog-post" 
@@ -115,8 +134,12 @@ class Blog extends React.Component {
                         onMouseUp={this.handleMouseUp}  
                         onMouseMove={this.handleMouseMove}
                     >
-                        <p>Lorem ipsum</p>
-                        <p>Lorem ipsum<br/>lorem ipsummm</p>
+                        <h4 id="card-title">Blog Title</h4>
+                        <p id="card-content">Example start to the blog post...</p>
+                        <div className="card-bottom">
+                            <p id="card-date">WED, FEB 19 20:14 PM</p>
+                            <button id="card-btn">Read</button>
+                        </div>
                     </div>
                     <div 
                         className="blog-post" 
@@ -125,8 +148,12 @@ class Blog extends React.Component {
                         onMouseUp={this.handleMouseUp}  
                         onMouseMove={this.handleMouseMove}
                     >
-                        <p>Lorem ipsum</p>
-                        <p>Lorem ipsum<br/>lorem ipsummm</p>
+                        <h4 id="card-title">Blog Title</h4>
+                        <p id="card-content">Example start to the blog post...</p>
+                        <div className="card-bottom">
+                            <p id="card-date">WED, FEB 19 20:14 PM</p>
+                            <button id="card-btn">Read</button>
+                        </div>
                     </div>
                     <div 
                         className="blog-post" 
@@ -135,8 +162,12 @@ class Blog extends React.Component {
                         onMouseUp={this.handleMouseUp}  
                         onMouseMove={this.handleMouseMove}
                     >
-                        <p>Lorem ipsum</p>
-                        <p>Lorem ipsum<br/>lorem ipsummm</p>
+                        <h4 id="card-title">Blog Title</h4>
+                        <p id="card-content">Example start to the blog post...</p>
+                        <div className="card-bottom">
+                            <p id="card-date">WED, FEB 19 20:14 PM</p>
+                            <button id="card-btn">Read</button>
+                        </div>
                     </div>
                     <div 
                         className="blog-post" 
@@ -145,8 +176,12 @@ class Blog extends React.Component {
                         onMouseUp={this.handleMouseUp}  
                         onMouseMove={this.handleMouseMove}
                     >
-                        <p>Lorem ipsum</p>
-                        <p>Lorem ipsum<br/>lorem ipsummm</p>
+                        <h4 id="card-title">Blog Title</h4>
+                        <p id="card-content">Example start to the blog post...</p>
+                        <div className="card-bottom">
+                            <p id="card-date">WED, FEB 19 20:14 PM</p>
+                            <button id="card-btn">Read</button>
+                        </div>
                     </div>
                     <div 
                         className="blog-post" 
@@ -155,8 +190,12 @@ class Blog extends React.Component {
                         onMouseUp={this.handleMouseUp}  
                         onMouseMove={this.handleMouseMove}
                     >
-                        <p>Lorem ipsum</p>
-                        <p>Lorem ipsum<br/>lorem ipsummm</p>
+                        <h4 id="card-title">Blog Title</h4>
+                        <p id="card-content">Example start to the blog post...</p>
+                        <div className="card-bottom">
+                            <p id="card-date">WED, FEB 19 20:14 PM</p>
+                            <button id="card-btn">Read</button>
+                        </div>
                     </div>
                     <div 
                         className="blog-post" 
@@ -165,8 +204,12 @@ class Blog extends React.Component {
                         onMouseUp={this.handleMouseUp}  
                         onMouseMove={this.handleMouseMove}
                     >
-                        <p>Lorem ipsum</p>
-                        <p>Lorem ipsum<br/>lorem ipsummm</p>
+                        <h4 id="card-title">Blog Title</h4>
+                        <p id="card-content">Example start to the blog post...</p>
+                        <div className="card-bottom">
+                            <p id="card-date">WED, FEB 19 20:14 PM</p>
+                            <button id="card-btn">Read</button>
+                        </div>
                     </div>
                     <div 
                         className="blog-post" 
@@ -175,8 +218,12 @@ class Blog extends React.Component {
                         onMouseUp={this.handleMouseUp}  
                         onMouseMove={this.handleMouseMove}
                     >
-                        <p>Lorem ipsum</p>
-                        <p>Lorem ipsum<br/>lorem ipsummm</p>
+                        <h4 id="card-title">Blog Title</h4>
+                        <p id="card-content">Example start to the blog post...</p>
+                        <div className="card-bottom">
+                            <p id="card-date">WED, FEB 19 20:14 PM</p>
+                            <button id="card-btn">Read</button>
+                        </div>
                     </div>
                     <div 
                         className="blog-post" 
@@ -185,8 +232,12 @@ class Blog extends React.Component {
                         onMouseUp={this.handleMouseUp}  
                         onMouseMove={this.handleMouseMove}
                     >
-                        <p>Lorem ipsum</p>
-                        <p>Lorem ipsum<br/>lorem ipsummm</p>
+                        <h4 id="card-title">Blog Title</h4>
+                        <p id="card-content">Example start to the blog post...</p>
+                        <div className="card-bottom">
+                            <p id="card-date">WED, FEB 19 20:14 PM</p>
+                            <button id="card-btn">Read</button>
+                        </div>
                     </div>
                     <div 
                         className="blog-post" 
@@ -195,8 +246,12 @@ class Blog extends React.Component {
                         onMouseUp={this.handleMouseUp}  
                         onMouseMove={this.handleMouseMove}
                     >
-                        <p>Lorem ipsum</p>
-                        <p>Lorem ipsum<br/>lorem ipsummm</p>
+                        <h4 id="card-title">Blog Title</h4>
+                        <p id="card-content">Example start to the blog post...</p>
+                        <div className="card-bottom">
+                            <p id="card-date">WED, FEB 19 20:14 PM</p>
+                            <button id="card-btn">Read</button>
+                        </div>
                     </div>
                 </div>
                 <p>Swipe to see more -></p>

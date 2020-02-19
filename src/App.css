@@ -15,6 +15,7 @@ body{
   color: #333;
   max-width: 2500px;
   margin: 0 auto;
+  background-color: #EDEDF4;
 }
 
 /* Buttons */
@@ -33,6 +34,11 @@ button.btn {
   min-width: 160px;
   transition: background-color 0.4s ease;
   cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+button.btn:hover{
+  background-color: #a72e3c;
 }
 
 /* Nav */
@@ -44,6 +50,7 @@ nav {
   width: 100%;
   max-width: 2500px;
   box-shadow: 1px 1rem 2rem 4px rgba(0,0,0,0.1);
+  z-index: 20;
 }
 
 div#brand {
@@ -152,14 +159,64 @@ span#bold {
 
 .blog-post {
   flex: 1 1;
-  height: 125px;
-  min-width: 200px;
+  height: 185px;
+  min-width: 300px;
   margin: 10px;
   border-radius: 10px;
-  padding: 5px 10px;
-  box-shadow: -1px 4px 6px #cccccc;
+  padding: 10px 15px;
+  box-shadow: 0px 4px 4px #dadada;
+}
+
+.card-bottom{
+  display: flex;
+  min-height: 50px;
+}
+
+p#card-content {
+  min-height: 50px;
+}
+
+p#card-date {
+  color: #B23A48;
+  font-weight: bold;
+  flex: 2;
+}
+
+button#card-btn {
+  border: none;
+  width: 30%;
+  background-color: transparent;
+  border: 2px solid #B23A48;
+  color: #B23A48;
+  border-radius: 4px;
+  height: 48px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  font-weight: 700;
+  min-width: 40px;
+  transition: background-color 0.4s ease;
+  cursor: pointer;
+  flex: 1;
+  transition: all 0.4s ease;
+}
+
+button#card-btn:hover {
+  background-color: #B23A48;
+  color: #fff;
 }
 
 .active{
   cursor: grabbing;
+}
+
+.title{
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+p.sub-content {
+  margin-top: 5px;
+}
+
+.content {
+  margin-top: 10px;
 }
