@@ -6,9 +6,11 @@ class Wrapper extends React.Component {
         return (
             <header>
                 <div className="wrapper-left">
-                    <p>Hello, my name</p>
-                    <p>is Luke!</p>
-                    <button className="btn">Contact</button>
+                    <div className="welcome">
+                        <p><span id="emoji">🤟🏻</span>Hello, my name</p>
+                        <p>is <span id="bold">Luke</span>!</p>
+                        <button className="btn">Contact</button>
+                    </div>
                 </div>
                 <div className="wrapper-right">
                     <img className="wrapper-img" src={Hacker} alt="coder"/>

@@ -13,6 +13,8 @@
 body{
   font-family: 'Poppins', sans-serif;
   color: #333;
+  max-width: 2500px;
+  margin: 0 auto;
 }
 
 /* Buttons */
@@ -40,6 +42,7 @@ nav {
   height: 75px;
   position: fixed;
   width: 100%;
+  max-width: 2500px;
   box-shadow: 1px 1rem 2rem 4px rgba(0,0,0,0.1);
 }
 
@@ -49,6 +52,14 @@ div#brand {
   margin: 15px;
   margin-left: 30px;
   font-weight: 600;
+  display: inline-block;
+}
+
+button#nav-btn {
+  margin: 20px;
+  float: right;
+  width: 150px;
+  height: 38px;
 }
 
 /* Wrapper */
@@ -57,16 +68,17 @@ header {
   background: #333;
   color: #fff;
   margin: 0px;
-  padding: 5rem;
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column-reverse;
+  width: 100%;
 }
 
 .wrapper-left {
   flex: 1 1;
   text-align: center;
-  margin-top: 24%;
+  margin-top: 20%;
 }
 
 .wrapper-right {
@@ -76,7 +88,54 @@ header {
 
 img.wrapper-img {
   width: 600px;
-  margin-top: 150px;
+  margin-top: 27%;
+}
+
+.welcome {
+  text-align: left;
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+span#bold {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1450px){
+  .welcome{
+    font-size: 2.5rem;
+  }
+  img.wrapper-img {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 1050px){
+  .welcome{
+    font-size: 2rem;
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    width: 90%;
+  }
+  button.btn {
+    width: 200px;
+  }
+  .wrapper-right {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  #nav-btn{
+    display: none;
+  }
+  .welcome{
+    font-size: 1.5rem;
+  }
 }
 
 /* Blogging */
