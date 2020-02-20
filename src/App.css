@@ -168,7 +168,7 @@ p.sub-blog {
   margin: 10px;
   border-radius: 10px;
   padding: 10px 15px;
-  box-shadow: 0px 4px 4px #dadada;
+  box-shadow: 0px 3px 4px 2px #dadada;
 }
 
 .card-bottom{
@@ -181,9 +181,9 @@ p#card-content {
 }
 
 p#card-date {
-  color: #B23A48;
+  color: #333;
   font-weight: bold;
-  flex: 2;
+  flex: 2 1;
 }
 
 button#card-btn {
@@ -222,7 +222,7 @@ p.sub-content {
 }
 
 .content {
-  margin-top: 10px;
+  margin: 10px 0px 0px 0px;
 }
 
 strong {
@@ -239,4 +239,34 @@ strong::after {
   background-image: url("./underline.svg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* Portfolio */
+
+.card{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.portfolio-card{
+  flex: 1 1 21%;
+  height: 300px;
+  min-width: 300px;
+  max-width: 300px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 4px 2px #dadada;
+}
+
+.portfolio-image {
+  max-width: inherit;
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
 }

@@ -69,7 +69,7 @@ class Blog extends React.Component {
             <div>
                 <div className="title">
                     <h2 className="content"><strong>Blog Posts</strong></h2>
-                    <p className="sub-content">Random entries that come to my head</p>
+                    <p className="sub-content">Swipe to see more</p>
                 </div>
                 <div className="blog-posts">
                     <div 
@@ -255,7 +255,6 @@ class Blog extends React.Component {
                         </div>
                     </div>
                 </div>
-                <p className="sub-blog">Swipe to see more</p>
             </div>
         );
       }

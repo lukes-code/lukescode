@@ -3,6 +3,8 @@ import Nav from './components/Nav';
 import './App.css';
 import Blog from './components/Blog';
 import Wrapper from './components/Wrapper';
+import Portfolio from './components/Portfolio';
+import Footer from './components/Footer';
 
 class App extends Component {
 
@@ -17,8 +19,10 @@ class App extends Component {
     return (
       <React.Fragment>
         <Nav />
-        <Wrapper />
-        <Blog />
+          <Wrapper />
+          <Blog />
+          <Portfolio />
+        <Footer />
       </React.Fragment>
     );
   }
