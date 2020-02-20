@@ -1,6 +1,7 @@
 import React from 'react';
 import * as contentful from 'contentful';
 import Arrow from '../arrow.svg';
+import BlogItem from '../components/BlogItem';
 
 class Blog extends React.Component {
     state = {
@@ -65,27 +66,26 @@ class Blog extends React.Component {
       
       render() {
 
+        let posts = this.state.posts.map((post, i) => (
+            <BlogItem
+                key={i}
+                index={i}
+                title={this.state.posts[i].fields.title}
+                down={this.handleMouseDown} 
+                leave={this.handleMouseLeave} 
+                up={this.handleMouseUp}  
+                move={this.handleMouseMove}
+            />
+          ));
+
         return (
             <div>
-                <div className="title">
+                {/* <div className="title">
                     <h2 className="content"><strong>Blog Posts</strong></h2>
                     <p className="sub-content">Swipe to see more</p>
-                </div>
+                </div> */}
                 <div className="blog-posts">
-                    <div 
-                        className="blog-post" 
-                        onMouseDown={this.handleMouseDown} 
-                        onMouseLeave={this.handleMouseLeave} 
-                        onMouseUp={this.handleMouseUp}  
-                        onMouseMove={this.handleMouseMove}
-                    >
-                        <h4 id="card-title">Blog Title</h4>
-                        <p id="card-content">Example start to the blog post...</p>
-                        <div className="card-bottom">
-                            <p id="card-date">WED, FEB 19 20:14 PM</p>
-                            <button id="card-btn">Read</button>
-                        </div>
-                    </div>
+                    {posts}
                     <div 
                         className="blog-post" 
                         onMouseDown={this.handleMouseDown} 

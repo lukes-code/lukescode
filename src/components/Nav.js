@@ -5,7 +5,7 @@ class Nav extends React.Component {
         return ( 
             <nav>
                 <div id="brand"> lukescode</div>
-                <button className="btn" id="nav-btn">Contact</button>
+                <a href="#footer"><button className="btn" id="nav-btn">Contact</button></a>
             </nav>
         );
     }
