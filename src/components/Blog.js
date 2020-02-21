@@ -3,6 +3,7 @@ import * as contentful from 'contentful';
 import Arrow from '../arrow.svg';
 import BlogItem from '../components/BlogItem';
 
+
 class Blog extends React.Component {
     state = {
         posts: [],
@@ -69,8 +70,10 @@ class Blog extends React.Component {
         let posts = this.state.posts.map((post, i) => (
             <BlogItem
                 key={i}
-                index={i}
+                blogId={i}
                 title={this.state.posts[i].fields.title}
+                content={this.state.posts[i].fields.longContent}
+                date={this.state.posts[i].fields.date}
                 down={this.handleMouseDown} 
                 leave={this.handleMouseLeave} 
                 up={this.handleMouseUp}  
