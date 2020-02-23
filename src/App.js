@@ -4,6 +4,7 @@ import './App.css';
 import Blog from './components/Blog';
 import Wrapper from './components/Wrapper';
 import Portfolio from './components/Portfolio';
+import Bio from './components/Bio';
 import Footer from './components/Footer';
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
         <Nav />
           <Wrapper />
           <Blog />
+          <Bio />
           <Portfolio />
         <Footer />
       </React.Fragment>

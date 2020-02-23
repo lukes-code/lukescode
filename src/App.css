@@ -73,6 +73,7 @@ nav {
   max-width: 2500px;
   box-shadow: 1px 1rem 2rem 4px rgba(0,0,0,0.1);
   z-index: 20;
+  top: 0;
 }
 
 div#brand {
@@ -193,6 +194,32 @@ p.sub-blog {
   border-radius: 10px;
   padding: 10px 15px;
   box-shadow: 0px 3px 4px 2px #dadada;
+}
+
+.full-blog-post {
+  margin: 150px auto;
+  max-width: 700px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+img#blog-image {
+  width: 100%;
+  margin-bottom: 50px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: 1px 1rem 2rem 4px rgba(0, 0, 0, 0.1);
+}
+
+img#mini-me {
+  border-radius: 100%;
+  height: 30px;
+  box-shadow: 1px 1rem 2rem 4px rgba(0, 0, 0, 0.1);
+}
+
+p#post-publisher {
+  margin: 10px;
+  margin-left: 0px;
 }
 
 .card-bottom{
@@ -321,7 +348,7 @@ img.portfolio-image {
 }
 
 .portfolio-image {
-  max-width: inherit;
+    max-width: 100%;
 }
 
 /* Footer */
@@ -342,3 +369,58 @@ img.icon:hover {
   height: 2.5rem;
   cursor: pointer;
 }
+
+/*  Bio */
+
+.bio-title {
+  padding: 3rem 5rem 1rem 5rem;
+}
+
+.bio-content {
+  text-align: left;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  max-width: 52%;
+}
+
+.bio-sub-content {
+  text-align: left;
+  display: block;
+  margin: 25px auto;
+  margin-bottom: 100px;
+  max-width: 52%;
+}
+
+.tech-stack{
+  display: flex;
+  white-space: nowrap;
+  overflow:scroll;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  /* max-width: 58%; */
+}
+
+.tech-name{
+  font-weight: bold;
+  color: #B23A48;
+}
+
+.tech{
+  flex: 1;
+  padding: 10px;
+}
+
+.tech img{
+  max-height: 50px;
+}
+
+@media only screen and (max-width: 600px){
+  .bio-content, .bio-sub-content{
+    max-width: 100%;
+  }
+}
+
+/*  Transitions */

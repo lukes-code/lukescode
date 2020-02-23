@@ -36,3 +36,19 @@ export function makeDate(jsonDate) {
 
     return `${fullDate}`;
 }
+
+export function workDays(){
+    var firstDate = new Date("03-18-2019");
+    var secondDate = new Date();
+    var ans =  Math.round((secondDate-firstDate)/(1000*60*60*24));
+    // console.log(ans);
+    return ans;
+}
+
+export function getYears(){
+    var dt1 = new Date("11-23-1996");
+    var dt2 = new Date();
+    var diff =(dt2.getTime() - dt1.getTime()) / 1000;
+    diff /= (60 * 60 * 24);
+    return Math.abs(Math.round(diff/365.25));
+}

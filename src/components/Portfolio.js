@@ -4,29 +4,38 @@ import Infiniscroats from '../portfolio/infiniscroats.jpg';
 import Workify from '../portfolio/workify.jpg';
 import Omdb from '../portfolio/omdb.jpg';
 import Lukescode from '../portfolio/lukescode.jpg';
+import Todo from '../portfolio/todo.jpg';
 
 class Portfolio extends React.Component {
     render() {
         return (
             <div>
-                <div className="title">
-                    <h2 className="content"><strong>Portfolio</strong></h2>
-                    <p className="sub-content">Swipe to see more</p>
-                </div>
                 <div className="card">
                     <div className="portfolio-card">
-                        <img src={Workify} alt="portfolio-img" className="portfolio-image" />
+                        <a href="https://github.com/lukes-code/WorkSafe-Spotify" target="_blank">
+                            <img src={Workify} alt="portfolio-img" className="portfolio-image" />
+                        </a>
                     </div>
                     <div className="portfolio-card">
-                        <img src={Infiniscroats} alt="portfolio-img" className="portfolio-image" />
+                        <a href="https://github.com/lukes-code/infinitescroats" target="_blank">
+                            <img src={Infiniscroats} alt="portfolio-img" className="portfolio-image" />
+                        </a>
                     </div>
                     <div className="portfolio-card">
-                        <img src={Omdb} alt="portfolio-img" className="portfolio-image" />
+                        <a href="https://github.com/lukes-code/imdbApi" target="_blank">
+                            <img src={Omdb} alt="portfolio-img" className="portfolio-image" />
+                        </a>
                     </div>
                     <div className="portfolio-card">
-                        <img src={Lukescode} alt="portfolio-img" className="portfolio-image" />
+                        <a href="#">
+                            <img src={Lukescode} alt="portfolio-img" className="portfolio-image" />
+                        </a>
                     </div>
-                    
+                    <div className="portfolio-card">
+                        <a href="https://github.com/lukes-code/ReactToDo101" target="_blank">
+                            <img src={Todo} alt="portfolio-img" className="portfolio-image" />
+                        </a>
+                    </div>
                 </div>
             </div>
         );
