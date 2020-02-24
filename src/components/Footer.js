@@ -8,7 +8,7 @@ class Footer extends React.Component {
         return (
             <div>
                 <div id="footer">
-                    <h2 className="content"><strong>Contact</strong></h2>
+                    <h1 className="content"><span className="thick">Contact</span></h1>
                     <p className="sub-content">Want a chat? Feel free to contact me.</p>
                     <p id="email">lukesterry@gmail.com</p>
                     <div id="icons">

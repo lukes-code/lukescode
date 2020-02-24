@@ -5,6 +5,7 @@ import Nav from './Nav';
 import Footer from './Footer';
 import MiniMe from '../mini-me.jpg';
 import { Spring } from 'react-spring/renderprops';
+import Markdown from 'markdown-to-jsx';
 
 class FullBlog extends React.Component {
     state = {
@@ -63,7 +64,10 @@ class FullBlog extends React.Component {
                                 >
                                     <img src={image} alt="header-image" id="blog-image"/>
                                     <h2 id="card-title">{this.state.posts.fields.title}</h2>
-                                    <p id="card-content">{this.state.posts.fields.longContent}</p>
+                                    <Markdown
+                                    >
+                                        {this.state.posts.fields.longContent}
+                                    </Markdown>
                                     <div className="card-bottom">
                                         <p id="post-publisher"><img src={MiniMe} alt="luke" id="mini-me"/></p>
                                         <p id="card-date">{makeDate(this.state.posts.fields.date)}</p>

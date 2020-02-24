@@ -15,7 +15,7 @@ class Wrapper extends React.Component {
                                 <div className="wrapper-left">
                                     <div style={props} className="welcome">
                                         <p><span id="emoji" role="img" aria-label="emoji">🤟🏻</span>Hello, my name</p>
-                                        <p>is <span id="bold">Luke</span>!</p>
+                                        <p>is <b>Luke</b>!</p>
                                         <a href="#footer"><button className="btn">Contact</button></a>
                                     </div>
                                 </div>
