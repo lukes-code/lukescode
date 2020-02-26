@@ -190,6 +190,7 @@ p.sub-blog {
   flex: 1 1;
   height: 185px;
   min-width: 300px;
+  max-width: 300px;
   margin: 10px;
   border-radius: 10px;
   padding: 10px 15px;
@@ -374,7 +375,7 @@ img.icon:hover {
 /*  Bio */
 
 .bio-title {
-  padding: 3rem 3rem 1rem 3rem;
+  padding: 3rem 1rem 1rem 1rem;
   display: flex;
   flex-wrap: wrap;
   max-width: 1600px;
@@ -392,7 +393,7 @@ div#bio-image img {
   box-shadow: 0px 3px 14px 8px #b7b7b7;
   width: 75%;
   max-width: 400px;
-  min-width: 300px;
+  min-width: 275px;
 }
 
 .bio {
@@ -457,7 +458,7 @@ div#bio-image img {
 
 @media only screen and (max-width: 400px){
   .bio-sub-content{
-    min-width: 95%;
+    min-width: 75%;
   }
 }
 

@@ -8,7 +8,7 @@ class Wrapper extends React.Component {
             <header>
                 <Spring
                     from={{ opacity: 0, left: -250 }}
-                    to={{ opacity: 1, left: 70 }}
+                    to={{ opacity: 1, left: 35 }}
                     >
                         {props => (
                             <React.Fragment>
