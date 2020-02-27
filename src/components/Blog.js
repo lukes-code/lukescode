@@ -83,10 +83,6 @@ class Blog extends React.Component {
 
         return (
             <div>
-                {/* <div className="title">
-                    <h2 className="content"><strong>Blog Posts</strong></h2>
-                    <p className="sub-content">Swipe to see more</p>
-                </div> */}
                 <div className="blog-posts">
                     {posts}
                 </div>

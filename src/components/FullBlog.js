@@ -23,24 +23,32 @@ class FullBlog extends React.Component {
     })  
     
     componentDidMount() {
-        //Add wait
-        setTimeout(function() {
-            this.setState({render: true})
-        }.bind(this), 100)
         //Set blog posts in state
         this.fetchPosts().then(this.setPosts);
+        //Add wait
+        setTimeout(function(async) {
+            const posts = this.state.posts;
+            if(posts.length !== 0){
+                this.setState({render: true})
+            } else {
+                this.fetchPosts().then(this.setPosts);
+            }
+        }.bind(this), 100)
         //Get blogId
         this.setState({ fullId: this.props.location.pathname.match(/\/([^/]*)$/)[1] });
     }  
     
     fetchPosts = () => this.client.getEntries()  
         setPosts = response => {
-            // alert(JSON.stringify(response.items));
+            console.log('setting posts');
             this.setState({
                 posts: response.items[this.state.fullId]
                 
         })
-        // alert(this.state.posts.fields.title);
+        const posts = this.state.posts;
+        if(posts.length !== 0){
+            this.setState({render: true});
+        }
     }
       
     render() {
@@ -48,6 +56,7 @@ class FullBlog extends React.Component {
         let renderContainer = false //By default don't render anything
         
         if(this.state.render) {
+            console.log(this.state);
             const image = this.state.posts.fields.image.fields.file.url;
             return (
                 <React.Fragment>
