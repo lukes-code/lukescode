@@ -12,7 +12,7 @@ class Portfolio extends React.Component {
             <div>
                 <div className="card">
                     <div className="portfolio-card">
-                        <a href="https://github.com/lukes-code/WorkSafe-Spotify" target="_blank">
+                        <a href="https://github.com/lukes-code/Workify" target="_blank">
                             <img src={Workify} alt="portfolio-img" className="portfolio-image" />
                         </a>
                     </div>
