@@ -23,7 +23,7 @@ export function makeDate(jsonDate) {
 
     //Find day number of the week and set day name
     const dayNo = date.getDay();
-    var days = ["SUN","MON","TUE","WED","THU","FR","SAT"];
+    var days = ["SUN","MON","TUE","WED","THU","FRI","SAT"];
     const day = days[dayNo];
 
     //Find month number and set month name
