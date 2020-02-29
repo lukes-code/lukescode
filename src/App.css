@@ -85,6 +85,11 @@ div#brand {
   display: inline-block;
 }
 
+#brand a {
+  text-decoration: none;
+  color: inherit;
+}
+
 button#nav-btn {
   margin: 20px;
   float: right;
@@ -176,10 +181,15 @@ span#bold {
   overflow:scroll;
   margin-top: 10px;
   margin-bottom: 10px;
+  user-select: none;
 }
 
 ::-webkit-scrollbar{
   display: none;
+}
+
+@-moz-document url-prefix() {
+  .blog-posts{overflow: hidden !important;}
 }
 
 p.sub-blog {

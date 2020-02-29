@@ -7,7 +7,7 @@ class Bio extends React.Component{
     render () {
 
         const WorkingDays = workDays();
-        const Years = getYears();
+        const Years = `${getYears()}`;
 
         return (
             <React.Fragment>
@@ -23,7 +23,7 @@ class Bio extends React.Component{
                             <p>I landed my first developer role {WorkingDays} days ago, when I joined Next Venture Technologies, here I get to gain professional experience and take on challenges everyday working to provide software solutions for the insurance sector.</p>
                             <p>Despite being employed I am constantly learning and building things in my free time, I wake up early and go to sleep late most nights trying to learn the latest technologies.</p>
                             <p>These technologies so far include:</p>
-                            <p className="tech-name">JAVASCRIPT - REACT - CSS - SASS - HTML - PHP - MYSQL - GIT - GITHUB - SVN - FIREBASE - JQUERY - ADOBE XD - ADOBE PSD</p>
+                            <p className="tech-name">JAVASCRIPT - REACT - CSS - SASS - HTML - PHP - MYSQL - GIT - GITHUB - SVN - FIREBASE - JQUERY - ADOBE XD - ADOBE PS</p>
                         </div>
                     </div>
                 </div>

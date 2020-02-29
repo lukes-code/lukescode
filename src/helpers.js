@@ -38,17 +38,20 @@ export function makeDate(jsonDate) {
 }
 
 export function workDays(){
-    var firstDate = new Date("03-18-2019");
+    var firstDate = new Date("2019-03-18");
     var secondDate = new Date();
     var ans =  Math.round((secondDate-firstDate)/(1000*60*60*24));
-    // console.log(ans);
+    console.log(firstDate);
+    console.log(secondDate);
+    console.log(ans);
     return ans;
 }
 
 export function getYears(){
-    var dt1 = new Date("11-23-1996");
+    var dt1 = new Date("1996-11-23");
     var dt2 = new Date();
     var diff =(dt2.getTime() - dt1.getTime()) / 1000;
     diff /= (60 * 60 * 24);
     return Math.abs(Math.round(diff/365.25));
+    // console.log(ans);
 }
