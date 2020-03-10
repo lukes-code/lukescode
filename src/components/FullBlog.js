@@ -67,25 +67,29 @@ class FullBlog extends React.Component {
 
                     >
                         {props => (
-                            <div style={props}>
-                                <div 
+                            <main style={props}>
+                                <section 
                                     className="full-blog-post"
                                 >
                                     <img src={image} alt="header-image" id="blog-image"/>
-                                    <h2 id="card-title">{this.state.posts.fields.title}</h2>
-                                    <Markdown
-                                    >
-                                        {this.state.posts.fields.longContent}
-                                    </Markdown>
-                                    <div className="card-bottom">
-                                        <p id="post-publisher"><img src={MiniMe} alt="luke" id="mini-me"/></p>
+                                    <article>
+                                        <h2 id="card-title">{this.state.posts.fields.title}</h2>
+                                        <Markdown
+                                        >
+                                            {this.state.posts.fields.longContent}
+                                        </Markdown>
+                                    </article>
+                                    <aside className="card-bottom">
+                                        <figure id="post-publisher">
+                                            <img src={MiniMe} alt="luke" id="mini-me"/>
+                                        </figure>
                                         <p id="card-date">{makeDate(this.state.posts.fields.date)}</p>
-                                    </div>
-                                </div>
-                                <Footer />
-                            </div>
+                                    </aside>
+                                </section>
+                            </main>
                         )}
                     </Spring>
+                    <Footer />
                 </React.Fragment>
             );
         } else {

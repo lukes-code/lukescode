@@ -21,9 +21,11 @@ class App extends Component {
       <React.Fragment>
         <Nav />
           <Wrapper />
-          <Blog />
-          <Bio />
-          <Portfolio />
+          <main>
+            <Blog />
+            <Bio />
+            <Portfolio />
+          </main>
         <Footer />
       </React.Fragment>
     );

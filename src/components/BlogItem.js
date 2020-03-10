@@ -16,7 +16,7 @@ class BlogItem extends React.Component {
 
             >
                 {props => (
-                    <div 
+                    <section 
                         style={props}
                         className="blog-post" 
                         onMouseDown={this.props.down} 
@@ -25,14 +25,14 @@ class BlogItem extends React.Component {
                         onMouseMove={this.props.move}
                     >
                         <h4 id="card-title">{this.props.title}</h4>
-                        <p id="card-content">{textTruncate(this.props.content, 33)}</p>
+                        <p id="card-content">{textTruncate(this.props.content, 40)}</p>
                         <div className="card-bottom">
                             <p id="card-date">{makeDate(this.props.date)}</p> 
                             <Link to={postLink}>
                                 <button id="card-btn">Read</button>
                             </Link>
                         </div>
-                    </div>
+                    </section>
                 )}
             </Spring>
         );

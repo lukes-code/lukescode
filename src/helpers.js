@@ -2,7 +2,7 @@
 export function textTruncate(str, length, ending) {
     //Set default length if null
     if(length == null){
-        length = 100;
+        length = 150;
     }
     //Default ending
     if(ending == null){

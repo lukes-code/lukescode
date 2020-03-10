@@ -82,11 +82,9 @@ class Blog extends React.Component {
           ));
 
         return (
-            <div>
-                <div className="blog-posts">
-                    {posts}
-                </div>
-            </div>
+            <section className="blog-posts">
+                {posts}
+            </section>
         );
       }
 }
