@@ -6,6 +6,8 @@ import Footer from './Footer';
 import MiniMe from '../mini-me.jpg';
 import { Spring } from 'react-spring/renderprops';
 import Markdown from 'markdown-to-jsx';
+import Skeleton from '@material-ui/lab/Skeleton';
+import Typography from '@material-ui/core/Typography';
 
 class FullBlog extends React.Component {
     state = {
@@ -29,7 +31,7 @@ class FullBlog extends React.Component {
         setTimeout(function(async) {
             const posts = this.state.posts;
             if(posts.length !== 0){
-                this.setState({render: true})
+                this.setState({render: true});
             } else {
                 this.fetchPosts().then(this.setPosts);
             }
@@ -54,10 +56,7 @@ class FullBlog extends React.Component {
     render() {
 
         let renderContainer = false //By default don't render anything
-        
-        if(this.state.render) {
-            console.log(this.state);
-            const image = this.state.posts.fields.image.fields.file.url;
+        const image = ((this.state.render) ? this.state.posts.fields.image.fields.file.url : false);
             return (
                 <React.Fragment>
                     <Nav />
@@ -71,20 +70,39 @@ class FullBlog extends React.Component {
                                 <section 
                                     className="full-blog-post"
                                 >
-                                    <img src={image} alt="header-image" id="blog-image"/>
-                                    <article>
-                                        <h2 id="card-title">{this.state.posts.fields.title}</h2>
-                                        <Markdown
-                                        >
-                                            {this.state.posts.fields.longContent}
-                                        </Markdown>
-                                    </article>
-                                    <aside className="card-bottom">
-                                        <figure id="post-publisher">
-                                            <img src={MiniMe} alt="luke" id="mini-me"/>
-                                        </figure>
-                                        <p id="card-date">{makeDate(this.state.posts.fields.date)}</p>
-                                    </aside>
+                                    {this.state.render ? (
+                                        <img src={image} alt="header-image" id="blog-image"/>
+                                    ) : (
+                                        <Skeleton variant="rect" height={118} />
+                                    )
+                                    }
+                                    {this.state.render ? (
+                                        <React.Fragment>
+                                            <article>
+                                                <h2 id="card-title">{this.state.posts.fields.title}</h2>
+                                                <Markdown
+                                                >
+                                                    {this.state.posts.fields.longContent}
+                                                </Markdown>
+                                            </article>
+                                            <aside className="card-bottom">
+                                                <figure id="post-publisher">
+                                                    <img src={MiniMe} alt="luke" id="mini-me"/>
+                                                </figure>
+                                                <p id="card-date">{makeDate(this.state.posts.fields.date)}</p>
+                                            </aside>
+                                        </React.Fragment>
+                                    ) : (
+                                        <React.Fragment>
+                                            <Typography variant="h3">
+                                                <Skeleton animation="wave" />
+                                            </Typography>
+                                            <Skeleton animation="wave" />
+                                            <Skeleton animation="wave" />
+                                            <Skeleton animation="wave" />
+                                        </React.Fragment>
+                                    )
+                                    }
                                 </section>
                             </main>
                         )}
@@ -92,13 +110,6 @@ class FullBlog extends React.Component {
                     <Footer />
                 </React.Fragment>
             );
-        } else {
-            return (
-                <React.Fragment>
-                    <Nav />
-                </React.Fragment>
-            );
-        }
         
     }
 }

@@ -6,7 +6,7 @@ import Linkedin from '../icons/linkedin.svg';
 class Footer extends React.Component {
     render() {
         return (
-            <footer>
+            <footer id="footer">
                 <h1 className="content"><span className="thick">Contact</span></h1>
                 <p className="sub-content">Want a chat? Feel free to contact me.</p>
                 <p id="email">lukesterry@gmail.com</p>
