@@ -1,6 +1,5 @@
 import React from 'react';
 import * as contentful from 'contentful';
-import Arrow from '../arrow.svg';
 import BlogItem from '../components/BlogItem';
 
 

@@ -54,8 +54,6 @@ class FullBlog extends React.Component {
     }
       
     render() {
-
-        let renderContainer = false //By default don't render anything
         const image = ((this.state.render) ? this.state.posts.fields.image.fields.file.url : false);
             return (
                 <React.Fragment>
@@ -71,7 +69,7 @@ class FullBlog extends React.Component {
                                     className="full-blog-post"
                                 >
                                     {this.state.render ? (
-                                        <img src={image} alt="header-image" id="blog-image"/>
+                                        <img src={image} alt="header" id="blog-image"/>
                                     ) : (
                                         <Skeleton variant="rect" height={118} />
                                     )

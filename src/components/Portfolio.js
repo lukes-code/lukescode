@@ -1,5 +1,4 @@
 import React from 'react';
-import Default from '../default.jpg';
 import Infiniscroats from '../portfolio/infiniscroats.jpg';
 import Workify from '../portfolio/workify.jpg';
 import Corona from '../portfolio/corona.jpg';
@@ -33,7 +32,7 @@ class Portfolio extends React.Component {
                         </a>
                     </div>
                     <div className="portfolio-card">
-                        <a href="#">
+                        <a href="https://lukescode.tech">
                             <img src={Lukescode} alt="portfolio-img" className="portfolio-image" />
                         </a>
                     </div>
