@@ -11,9 +11,9 @@ class Footer extends React.Component {
                 <p className="sub-content">Want a chat? Feel free to contact me.</p>
                 <p id="email">lukesterry@gmail.com</p>
                 <div id="icons">
-                    <a href="https://github.com/lukes-code" target="_blank"><img className="icon" src={Github} alt="github" /></a>
-                    <a href="https://instagram.com/lukes.code" target="_blank"><img className="icon" src={Instagram} alt="instagram" /></a>
-                    <a href="https://uk.linkedin.com/in/luke-burton-sterry-50927417a" target="_blank"><img className="icon" src={Linkedin} alt="linkedin" /></a>
+                    <a href="https://github.com/lukes-code" target="_blank" rel="noopener noreferrer"><img className="icon" src={Github} alt="github" /></a>
+                    <a href="https://instagram.com/lukes.code" target="_blank" rel="noopener noreferrer"><img className="icon" src={Instagram} alt="instagram" /></a>
+                    <a href="https://uk.linkedin.com/in/luke-burton-sterry-50927417a" target="_blank" rel="noopener noreferrer"><img className="icon" src={Linkedin} alt="linkedin" /></a>
                 </div>
             </footer>
         );
