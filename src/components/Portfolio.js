@@ -14,7 +14,7 @@ class Portfolio extends React.Component {
                 <div className="card">
                 <div className="portfolio-card">
                         <a href="https://pleaseaskaway.netlify.app" target="_blank" rel="noopener noreferrer">
-                            <img src={Corona} alt="portfolio-img" className="portfolio-image" />
+                            <img src={AskAway} alt="portfolio-img" className="portfolio-image" />
                         </a>
                     </div>
                     <div className="portfolio-card">
